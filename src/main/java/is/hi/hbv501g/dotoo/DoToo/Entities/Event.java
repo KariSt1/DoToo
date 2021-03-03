@@ -11,7 +11,9 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Temporal(TemporalType.TIMESTAMP)
     private Calendar startDate;
+    @Temporal(TemporalType.TIMESTAMP)
     private Calendar endDate;
     private String title;
     private String category;
